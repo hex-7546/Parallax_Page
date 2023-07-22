@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.bg-image,
+.section4{
+    background-attachment: fixed;
+}
+
+.bg-image {
+    width: 100%;
+    max-width: 500rem;
+    min-height: 100%;
+    height: 60rem;
+    background-image: url(sakura.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    max-height: 4.8rem;
+    position: fixed;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-items p a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-items p{
+    margin-right: 3rem;
+}
+.nav-items p:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+    text-shadow: 2px 2px 20px white;
+}
+.nav h1{
+    margin-left: 2rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* SECTION 2 */
+.section2 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    width: 65%;
+    border-radius: 20px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.content .written{
+    width: 65%;
+    margin-left: 4rem;
+}
+.content .written h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0;
+}
+.content .written p{
+    font-size: 1.25rem;
+    padding: 0 2rem 2rem;
+    text-align: center;
+}
+
+.content .non-written .image{
+    width: 100%;
+    max-width: 18rem;
+    height: 100%;
+}
+
+/* SECTION 3 */
+
+.section3 {
+    background-color: rgb(109, 0, 16);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0; 
+}
+.section3 .h3{
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2.1rem 0 2.1rem 0;
+    text-shadow: 0 0 25px #ff5e5e;
+}
+.section3 .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section3 .boxes .box1,
+.section3 .boxes .box2,
+.section3 .boxes .box3,
+.section3 .boxes .box4,
+.section3 .boxes .box5 {
+    width: 20%;
+    width: 18rem;
+    height: 25rem;
+    background-color: rgb(243, 173, 184);
+    margin: 1rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.section3 .boxes .box1:hover,
+.section3 .boxes .box2:hover,
+.section3 .boxes .box3:hover,
+.section3 .boxes .box4:hover,
+.section3 .boxes .box5:hover{
+    transform: scale(1.05);
+}
+
+.section3 .boxes .box1:hover,
+.section3 .boxes .box2:hover,
+.section3 .boxes .box3:hover,
+.section3 .boxes .box4:hover,
+.section3 .boxes .box5:hover {
+    box-shadow: 0 0px 20px #ffffff;
+    border: none;
+}
+
+.section3 .boxes .links {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.box-img img{
+    width: 15rem;
+    height: 20rem;
+    position: relative;
+}
+.section3 .boxes .box1 p,
+.section3 .boxes .box2 p,
+.section3 .boxes .box3 p,
+.section3 .boxes .box4 p,
+.section3 .boxes .box5 p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 0 0 25px #ff5e5e;
+}
+
+/* SECTION 4 */
+
+.section4{
+    background-image: url(flowers\ op.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
+    padding: 0 2rem;
+}
+.section4 .quote{
+    font-size: 3rem;
+    padding: 5.5rem 6rem 3rem;
+    text-align: center;
+}
+.section4 .quote-by {
+    font-size: 2.7rem;
+    font-weight: 400;
+}
+
+/* SECTION 5 */
+.section5 {
+    background-color: rgb(109, 0, 16);
+    color: #fff;
+    text-shadow: 0 0 25px #ff5e5e;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .content .written{
+        width: 65%;
+        margin-left: 1rem;
+    }
+    .content .written h2{
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    .content .written p{
+        font-size: 1rem;
+        padding: 0 2rem 2rem 3rem;
+        text-align: center;
+    }
+    
+    .content .non-written .image{
+        width: 15rem;
+    }
+    /* section3 */
+    .section3 {
+        padding: 1.5rem 0; 
+    }
+    .section3 .h3{
+        font-size: 2rem;
+        margin: 1rem 0 1rem 0;
+    }
+    .section3 .boxes .box1,
+    .section3 .boxes .box2,
+    .section3 .boxes .box3,
+    .section3 .boxes .box4,
+    .section3 .boxes .box5 {
+        max-width: 13rem;
+        height: 20rem;
+        margin: 1rem 0 2rem 0;
+    }
+    .box-img img{
+        width: 11rem;
+        height: 16rem;
+    }
+    .section3 .boxes .box1 p,
+    .section3 .boxes .box2 p,
+    .section3 .boxes .box3 p,
+    .section3 .boxes .box4 p,
+    .section3 .boxes .box5 p{
+        font-size: 1rem;
+    }
+    /* section4 */
+    .section4 .quote{
+        font-size: 1.5rem;
+    }
+    .section4 .quote-by {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-shadow: 2px 2px 2px #000;
+    }
+    /* SECTION 5 */
+    .section5 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section2 .content{
+        flex-direction: column;
+    }
+    .content .written{
+        width: 100%;
+    }
+    .content .written h2{
+        font-size: 1.5rem;
+    }
+    .content .written p{
+        font-size: 1rem;
+    }
+    
+    .content .non-written .image{
+        width: 12rem;
+    }
+    /* section3 */
+    .section3 {
+        padding: 1.2rem 0; 
+    }
+    .section3 .h3{
+        font-size: 1.7rem;
+    }
+    .section3 .boxes .box1,
+    .section3 .boxes .box2,
+    .section3 .boxes .box3,
+    .section3 .boxes .box4,
+    .section3 .boxes .box5 {
+        max-width: 10rem;
+        height: 15rem;
+        margin: 1rem 0 1rem 0;
+    }
+    .box-img img{
+        width: 8.5rem;
+        height: 12rem;
+    }
+    .section3 .boxes .box1 p,
+    .section3 .boxes .box2 p,
+    .section3 .boxes .box3 p,
+    .section3 .boxes .box4 p,
+    .section3 .boxes .box5 p{
+        font-size: 1rem;   
+    }
+    /* section4 */
+    .section4 .quote{
+        font-size: 1.3rem;
+    }
+    /* SECTION 5 */
+    .section5 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Section1 */
+    .section1 {
+        max-height: 3.5rem;
+        z-index: 9;
+    }
+    .nav-items p{
+        margin-right: 1.2rem;
+    }
+    .nav h1{
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+    /* Section2 */
+    .content .written h2{
+        font-size: 1.2rem;
+    }
+    .content .written p{
+        font-size: 0.8rem;
+    }
+    .content .non-written .image{
+        width: 10rem;
+    }
+    /* section3 */
+    .section3 {
+        padding: 1.05rem 0; 
+    }
+    .section3 .h3{
+        font-size: 1.4rem;
+    }
+    .section3 .boxes{
+        flex-direction: column;
+    }
+    .section3 .boxes .box1,
+    .section3 .boxes .box2,
+    .section3 .boxes .box3,
+    .section3 .boxes .box4,
+    .section3 .boxes .box5 {
+        width: 15rem;
+        height: 15rem;
+        margin: 1rem 0 1rem 0;
+    }
+    .box-img img{
+        width: 8rem;
+        height: 12rem;
+    }
+    .section3 .boxes .box1 p,
+    .section3 .boxes .box2 p,
+    .section3 .boxes .box3 p,
+    .section3 .boxes .box4 p,
+    .section3 .boxes .box5 p{
+        font-size: 0.7rem;   
+    }
+}
+
+@media (max-width: 600px) {
+    /* Section2 */
+    .section2 .content {
+        padding: 0.5rem;
+    }
+    .content .written h2{
+        margin: 1rem 0;
+    }
+    .content .written p{
+        padding: 0 0.5rem 1rem;
+    }
+    .content .non-written .image{
+        margin-bottom: 1.2rem;
+    }
+    /* section3 */
+    .section3 {
+        padding: 1rem 0; 
+    }
+    .section3 .h3{
+        font-size: 1.7rem;
+        margin: 0.7rem 0;
+    }
+    .section3 .boxes{
+        flex-direction: column;
+    }
+    .section3 .boxes .box1,
+    .section3 .boxes .box2,
+    .section3 .boxes .box3,
+    .section3 .boxes .box4,
+    .section3 .boxes .box5 {
+        max-width: 15rem;
+        height: 25rem;
+        margin: 1rem 0 2rem 0;
+    }
+    .box-img img{
+        width: 13rem;
+        height: 22rem;
+    }
+    .section3 .boxes .box1 p,
+    .section3 .boxes .box2 p,
+    .section3 .boxes .box3 p,
+    .section3 .boxes .box4 p,
+    .section3 .boxes .box5 p{
+        font-size: 0.8rem;
+    }
+    /* section4 */
+    .section4 .quote{
+        font-size: 1.1rem;
+        padding-bottom: 1.5rem;
+    }
+    .section4 .quote-by{
+        font-size: 0.9rem;
+    }
+    /* SECTION 5 */
+    .section5 {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    /* Section1 */
+    .section1 {
+        max-height: 3rem;
+    }
+    .nav-items p{
+        margin-right: 1rem;
+        font-size: 0.3rem;
+    }
+    .nav h1{
+        font-size: 1.2rem;
+        margin-left: 0.9rem;
+    }
+    /* Section2 */
+    .bg-image{
+        height: 30rem;
+    }
+    .section2 .content {
+        padding: 0.5rem;
+    }
+    .content .written{
+        margin: 0;
+    }
+    .content .written h2{
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+    .content .written p{
+        font-size: 0.3rem;
+        padding: 0 0.7rem 0.5rem;
+    }
+    .content .non-written .image{
+        margin-bottom: 0;
+        width: 5rem;
+    }
+    /* section3 */
+    .section3 {
+        padding: 1rem 0; 
+    }
+    .section3 .h3{
+        font-size: 1.2rem;
+        margin: 0.4rem 0;
+    }
+    .section3 .boxes{
+        flex-direction: column;
+    }
+    .section3 .boxes .box1,
+    .section3 .boxes .box2,
+    .section3 .boxes .box3,
+    .section3 .boxes .box4,
+    .section3 .boxes .box5 {
+        width: 10rem;
+        height: 15rem;
+        margin: 1rem 0 2rem 0;
+    }
+    .box-img img{
+        width: 8rem;
+        height: 12rem;
+    }
+    .section3 .boxes .box1 p,
+    .section3 .boxes .box2 p,
+    .section3 .boxes .box3 p,
+    .section3 .boxes .box4 p,
+    .section3 .boxes .box5 p{
+        font-size: 0.7rem;
+    }
+    /* section4 */
+    .section4{
+        height: 30rem;
+    }
+    .section4 .quote{
+        font-size: 1rem;
+        padding: 1rem 1rem 1.5rem;
+    }
+    .section4 .quote-by{
+        font-size: 0.7rem;
+    }
+    /* SECTION 5 */
+    .section5 {
+        font-size: 0.8rem;
+        padding: 1.2rem;
+    }
+}
